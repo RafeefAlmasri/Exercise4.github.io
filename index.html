@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <style>
+    @font-face{
+        font-family: My Font;
+        src: url(../Media/Lora-Italic-VariableFont_wght.ttf);
+    }
+    *{
+        font-family: My Font;
+    }
+    h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+        }
+        input[type=text] {
+            text-align: center;
+            color: rgb(173, 20, 204);
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid rgb(173, 20, 204);
+            border-radius: 5px;
+        }
+        input[type=text]:focus {
+            background-color: lightgray;
+        }
+        .btn{
+            text-align: center;
+            color: rgb(173, 20, 204);
+            width: 100px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid rgb(173, 20, 204);
+            border-radius: 5px;
+            background-color: black;
+        }
+        #C{
+            text-align: center;
+            color: rgb(173, 20, 204);
+            width: 350px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid rgb(173, 20, 204);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task_2_Form</h1>
+    <center><div style="background-color: lightgray; width: 500px; height: 300px; margin: 50px; padding: 50px;">
+        <form action="">
+            <label>First Name</label>
+            <input type="text" required name="FN" autofocus placeholder="Enter Your First_Name">
+            <br><br>
+            <label>Last Name</label>
+            <input type="text" required name="LN" placeholder="Enter Your Last_Name">
+            <br><br>
+            <label>Country</label>
+            <select id="C" name="Contry">
+              <option value="jordan">Jordan</option>
+              <option value="palestine">Palestine</option>
+            </select>
+            <br><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div></center>
+</body>
+</html>
